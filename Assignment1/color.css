@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    line-height: 1.3;
+    /* display: flex;
+    flex-direction: column;
+    position: relative; */
+    /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+    background-image: url("https://plus.unsplash.com/premium_photo-1677870728119-52aef052d7ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url(bg.png); */
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    height: 100vh;
+    width: 100vw; 
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+    z-index: 10;
+    padding: 20px 4%;
+}
+
+.logo{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 0.6s ease;
+}
+
+.nth-letter{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 60px;
+}
+
+.logo-sub{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: end;
+    transform: translateX(10px);
+    transition: all 0.6s ease;
+}
+
+.gear{
+    color: red;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    filter: blur(2px);
+    padding: 0 15px;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+nav a:hover{
+    transform: translateY(-5px);
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.sign-in-btn{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 100px;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    filter: blur(2px);
+}
+
+.sign-in-btn:hover{
+    transform: translateY(-5px);
+    border: 1px solid red;
+    color: red;
+}
+
+#icon{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 2px 3px;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+
+#menu{
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+#menu:hover{
+    color: red;
+}
+
+#icon:hover{
+    color: red;
+    border: 2px solid red;;
+}
+
+
+@media screen and (max-width: 1099px){
+    header{
+        padding: 15px 2%;
+    }
+    
+    .logo{
+        font-size: 30px;
+    }
+
+    .nth-letter{
+        font-size: 50px;
+    }
+
+    .logo-sub{
+        font-size: 13px;
+    }
+
+    .gear{
+        font-size: 18px;
+    }
+
+    nav{
+        gap: 2rem;
+    }
+
+    .nav-right{
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 556px) and (max-width: 996px){
+    header{
+        padding: 15px 5%;
+    }
+    
+    .logo{
+        font-size: 25px;
+    }
+
+    .nth-letter{
+        font-size: 35px;
+    }
+
+    .logo-sub{
+        font-size: 13px;
+    }
+
+    .gear{
+        font-size: 17px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav-right{
+        gap: 3rem;
+        filter: blur(0);
+    }
+
+    .sign-in-btn{
+        filter: blur(0);
+    }
+}
+
+@media screen and (max-width: 556px){
+    header{
+        padding: 15px 5%;
+    }
+    
+    .logo{
+        font-size: 23px;
+    }
+
+    .nth-letter{
+        font-size: 32px;
+    }
+
+    .logo-sub{
+        font-size: 10px;
+    }
+
+    .gear{
+        font-size: 13px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav-right{
+        gap: 3rem;
+    }
+
+    .sign-in-btn{
+        display: none;
+    }
+
+    #icon{
+        display: inline-block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .nav-right{
+        filter: blur(0);
+    }
+
+}
+
+section{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    filter: blur(4px);
+    width: 100%;
+}
+
+section h2{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease;
+}
+
+section p{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5rem;
+    transition: all 0.6s ease;
+}
+
+.btn{
+    background: none;
+    letter-spacing: 5px;
+    border: 3px solid white;
+    color: white;
+    padding: 13px 30px;
+    font-size: 20px;
+    border-radius: 100px;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+#arrow-icon{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-top: 4rem;
+}
+
+#arrow-icon:hover{
+    color: red;
+}
+
+.game-zone{
+    color: red;
+    font-size: 60px;
+}
+
+.one-stop{
+    color: red;
+    font-size: 40px;
+}
+
+.container{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 690px;
+    width: 90%;
+    border-radius: 25px;
+    box-shadow: 0 0 12px 2px white;
+    z-index: 15;
+    background-color: rgba(153, 153, 153, 0.534);
+    backdrop-filter: blur(5px);
+    display: flex;
+    overflow: hidden;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease;
+}
+
+.sign-in{
+    width: 500px;
+    margin: 20px 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+    opacity: 0;
+    animation: signIn 0.6s ease-in-out;
+}
+
+@keyframes signIn {
+    0%, 25%{
+        opacity: 1;
+    }
+    26%, 100%{
+        opacity: 0;
+    }
+}
+
+.sign-up{
+    width: 500px;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    transition: all 0.6s ease;
+}
+
+.container.active .sign-up{
+    display: inline-block;
+    right: 0;
+    margin-right: 10px;
+    opacity: 1;
+    z-index: 5;
+    animation: slide 0.6s ease;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(-300px);
+        opacity: 0.5;
+        z-index: 1;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.container form{
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.login{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.create{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-box{
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.input-box label{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    transform: translateY(15%);
+    font-size: 15px;
+    pointer-events: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -15px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px 40px 20px 5px;
+}
+
+#login-icons{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.help-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.help-container label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.checkbox{
+    margin-right: 7px;
+    position: relative;
+    top: 2px;
+}
+
+.help-container a{
+    font-size: 15px;
+    color: blue;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+.help-container a:hover{
+    text-decoration: underline;
+}
+
+.login-btn-container{
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn{
+    border: 1px solid black;
+    padding: 15px 0;
+    border-radius: 5px;
+    background: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.login-width{
+    width: 100%;
+}
+
+.sign-up-width{
+    width: 48%;
+}
+
+.login-btn:hover{
+    border: 1px solid red;
+    color: red;
+}
+
+.or-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.or-container-sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.or-container-sign-up hr{
+    width: 100%;
+    border: 1px solid red;
+}
+
+.or-container hr{
+    width: 100%;
+    border:1px solid red;
+}
+
+.or{
+    text-align: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.bottom-container{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.social-media a{
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.account-p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.register-button{
+    margin-left: 5px;
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.register-button:hover{
+    text-decoration: underline;
+}
+
+.terms-container{
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.terms-conditions{
+    color: blue;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 37%;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 150px 0 0 100px;
+    transition: all 0.6s ease;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-170%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    background-color: red;
+    height: 100%;
+    color: white;
+    left: -100%;
+    width: 200%;
+    transform: translateX(0);
+    position: relative;
+    transition: all 0.6s ease;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transform: all 0.6s ease;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+.toggle-container h1{
+    font-size: 50px;
+}
+
+.toggle-container .toggle-panel div{
+    line-height: 2;
+    font-size: 15px;
+    margin-top: 50px;
+} 
+
+.greeting{
+    z-index: 100;
+    position: absolute;
+    top: 12%;
+    left: 12px;
+    width: 95%;
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 10px 50px;
+    transform: skewX(-20deg);
+    border-radius: 40px;
+    transition: all 0.6s ease;
+    display: none;
+}
+
+.greeting h1{
+    transform: skewX(20deg);
+    transition: all 0.6s ease;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1350px){
+    header{
+        padding: 15px 2%;
+    }
+    
+    .logo{
+        font-size: 30px;
+    }
+
+    .nth-letter{
+        font-size: 50px;
+    }
+
+    .logo-sub{
+        font-size: 13px;
+    }
+
+    .gear{
+        font-size: 18px;
+    }
+
+    nav{
+        gap: 5rem;
+    }
+     
+    .container{
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1351px){
+    .container{
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1099px) and (max-width: 1488px){
+    .container{
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width:523px) and (max-width: 996px){
+    .toggle-container{
+        display: none;
+    }
+
+    .container{
+        width: 500px;
+    }
+
+    .greeting{
+        display: inline-block;
+        width: 500px;
+        left: 50%;
+        top: 85px;
+        transform: translate(-50%, 50%) skewX(-20deg);
+    }
+}
+
+@media screen and (max-width: 522px){
+    .toggle-container{
+        display: none;
+    }
+    .container{
+        width: 98%;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    .greeting{
+        display: inline-block;
+    }
+}

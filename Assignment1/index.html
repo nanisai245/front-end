@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="" class="logo"><span class="nth-letter">G</span>amer<span class="nth-letter">Z</span>one</a>
+            <p class="logo-sub">Level up your <span class="gear">Gear</span></p>
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Accessories</a>
+            <a href="">Categories</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="nav-right">
+            <button class="sign-in-btn">Sign In</button>
+            <div class="bx bx-menu" id="menu"></div>
+            <div class="bx bx-x" id="icon"></div>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h2>Immerse in <span class="game-zone">Game Zone</span></h2>
+            <p>Your <span class="one-stop">one stop</span> gaming store</p>
+            <button class="btn">Explore</button>
+            <div class="bx bxs-down-arrow" id="arrow-icon"></div>
+        </div>
+    </section>
+    <div class="greeting">
+        <h1 id="greeting">Welcome back! Gamer</h1>
+    </div>   
+    <div class="container">
+        <div class="form-container sign-in">
+            <form id="form1" autocomplete="off">
+                <h1 class="login">Login</h1>
+                <div class="input-box">
+                    <span class="bx bx-user" id="login-icons"></span>
+                    <input id="email" type="text" required>
+                    <label for="email">Email / Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="bx bxs-lock-alt" id="login-icons"></span>
+                    <input id="password" type="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="help-container">
+                    <label><input type="checkbox" class="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="login-btn-container">
+                    <button type="submit" class="login-btn login-width">Login</button>
+                </div>
+                <div class="or-container">
+                    <hr>
+                    <p class="or">OR</p>
+                    <hr>
+                </div>
+                <div class="bottom-container">
+                    <h1>Login By</h1>
+                    <div class="social-media">
+                        <a class="bx bxl-google"></a>
+                        <a class="bx bxl-linkedin-square"></a>
+                        <a class="bx bxl-facebook"></a>
+                        <a class="bx bxl-twitter"></a>
+                    </div>
+                </div>
+                <p class="account-p">Do not have an account ? <a href="#" class="register-button" id="register">Register here</a></p>
+            </form>
+        </div>
+        <div class="form-container sign-up">
+            <form id="form2" autocomplete="off">
+                <h1 class="create">Create Account</h1>
+                <!-- <div class="bottom-container">
+                    <div class="social-media">
+                        <a class="bx bxl-google"></a>
+                        <a class="bx bxl-linkedin-square"></a>
+                        <a class="bx bxl-facebook"></a>
+                        <a class="bx bxl-twitter"></a>
+                    </div>
+                </div>
+                <div class="or-container-sign-up">
+                    <hr>
+                    <p class="or">OR</p>
+                    <hr>
+                </div> -->
+                <div class="input-box">
+                    <span class="bx bxs-edit-all" id="login-icons"></span>
+                    <input id="mail" type="email" required>
+                    <label for="mail">Full Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="bx bxs-envelope" id="login-icons"></span>
+                    <input id="mail" type="email" required>
+                    <label for="mail">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="bx bx-user" id="login-icons"></span>
+                    <input id="txt" type="text" required>
+                    <label for="txt">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="bx bxs-lock-alt" id="login-icons"></span>
+                    <input id="pass" type="password" required>
+                    <label for="pass">Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="bx bxs-lock-alt" id="login-icons"></span>
+                    <input id="password1" type="password" required>
+                    <label for="password1">Confirm Password</label>
+                </div>
+                <div class="login-btn-container">
+                    <button type="submit" class="login-btn sign-up-width">Submit</button>
+                    <button class="login-btn sign-up-width" id="submit">Back</button>
+                </div>
+                <div class="terms-container">
+                    By signing up, you agree to the <a href="#" class="terms-conditions">Terms of Service</a> and <a href="#" class="terms-conditions">Privacy Policy</a>, including <a href="#" class="terms-conditions">Cookie</a> Use.
+                </div>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, Gamer!</h1>
+                    <div>
+                    <p>Anyone can play games, but not everyone can handle the heat.</p>
+                    <p>Enjoy additional features by signing up</p>
+                    </div> 
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back! Gamer</h1>
+                    <div>
+                    <p>We have updated our site with new products.</p>
+                    <p>Add to your cart before someone else grabs it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
